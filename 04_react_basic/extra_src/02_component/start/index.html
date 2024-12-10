@@ -10,16 +10,18 @@
     <script type="text/babel">
       const appEl = document.querySelector("#app");
       const root = ReactDOM.createRoot(appEl);
-      // function Example() {
-      //   return <h1>Hello Components</h1>;
-      // }
-      const Example = () => {
-        return (
-          <div>
-            <h1>Hello Components</h1>
-          </div>
-        );
+      function Example() {
+        return <h1>Hello Components</h1>;
       }
+
+      // 関数コンポーネントをアロー関数で書いた場合
+      // const Example = () => {
+      //   return (
+      //     <div>
+      //       <h1>Hello Components</h1>
+      //     </div>
+      //   );
+      // }
 
       root.render(<Example />);
     </script>
