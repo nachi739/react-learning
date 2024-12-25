@@ -6,10 +6,14 @@
 import "./Child.css";
 
 //const Child = (props) => {
-const Child = ({ color }) => {
+const Child = ({ color, num, fn, bool, obj }) => {
   return (
     <div className={`component ${color}`}>
       <h3>Hello Component</h3>
+      <h1>{num}</h1>
+      <h1>{fn("Props")}</h1>
+      <h1>{bool ? "true" : "false"}</h1>
+      <h1>{obj.name}</h1>
     </div>
   );
 };
